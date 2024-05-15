@@ -50,6 +50,7 @@ public class Main {
             System.out.printf("Your maintenance calories is: %d %n", femaleCalories);
         }
 
+
         System.out.println("Thank you for using Unlimited maintenance calorie calculator!");
         scanner.close();
     }
