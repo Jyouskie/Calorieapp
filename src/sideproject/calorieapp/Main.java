@@ -30,7 +30,7 @@ public class Main {
             int maleCalories = (int) ((10 * userWeight) + (6.25 * userHeight) - (5 * userAge) + 5);
 
             // Asking the user about how active they are.
-            System.out.println("1. Not active");
+            System.out.println("1. Not active (very little exercise, works a desk job)");
             System.out.println("2. Light active (1-3 days of exercise)");
             System.out.println("3. Moderately active (moderate exercise 3-5 days)");
             System.out.println("4. Very active (heavy exercise 6-7 days)");
@@ -71,7 +71,7 @@ public class Main {
             int femaleCalories = (int) ((10 * userWeight) + (6.25 * userHeight) - (5 * userAge) - 161);
 
             // Asking the user about how active they are.
-            System.out.println("1. Not active");
+            System.out.println("1. Not active (very little exercise, works a desk job)");
             System.out.println("2. Light activity (1-3 days of exercise)");
             System.out.println("3. Moderately active (moderate exercise 3-5 days)");
             System.out.println("4. Very active (heavy exercise 6-7 days)");
