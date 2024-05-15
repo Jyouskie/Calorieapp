@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        // initializing the scanner
+        // initializing the scanner.
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hello, Welcome to Unlimited.");
 
