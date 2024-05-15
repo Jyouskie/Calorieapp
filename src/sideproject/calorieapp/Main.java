@@ -15,19 +15,21 @@ public class Main {
         if (userChoice.equals("male")) {
 
             // asking user to enter their weight, height, and age.
-            System.out.print("PLease enter your weight: ");
+            System.out.println("please round to the nearest whole number.");
+            System.out.print("PLease enter your weight in kg: ");
 
-            int userWeight = scanner.nextInt();
+            double userWeight = scanner.nextInt();
 
-            System.out.print("Please enter your height in inches: ");
-            int userHeight = scanner.nextInt();
+            System.out.print("Please enter your height in cm: ");
+            double userHeight = scanner.nextInt();
 
             System.out.print("Please enter your age: ");
             int userAge = scanner.nextInt();
 
             // initializing male maintenance calories
-            int maleCalories = (int) (655 + (6.23 * userWeight) + (12.7 * userHeight) - (6.8 * userAge));
+            int maleCalories = (int) ((10 * userWeight) + (6.25 * userHeight) - (5 * userAge) + 5);
 
+            // Asking the user about how active they are.
             System.out.println("1. Not active");
             System.out.println("2. Light active (1-3 days of exercise)");
             System.out.println("3. Moderately active (moderate exercise 3-5 days)");
@@ -36,6 +38,7 @@ public class Main {
             System.out.print("Please enter the number that represents how active are you? ");
             int activity = scanner.nextInt();
 
+            // calculating user maintenance calories
             if (activity == 1) {
                 maleCalories = (int) (maleCalories * 1.2);
             } else if (activity == 2) {
@@ -53,18 +56,21 @@ public class Main {
         }
         else {
             // asking user to enter their weight, height, and age.
-            System.out.print("PLease enter your weight: ");
+            System.out.println("please round to the nearest whole number.");
+            System.out.print("PLease enter your weight in kg: ");
 
-            int userWeight = scanner.nextInt();
+            double userWeight = scanner.nextInt();
 
-            System.out.print("Please enter your height in inches: ");
-            int userHeight = scanner.nextInt();
+            System.out.print("Please enter your height in cm: ");
+            double userHeight = scanner.nextInt();
 
             System.out.print("Please enter your age: ");
             int userAge = scanner.nextInt();
 
             // initializing female maintenance calories
-            int femaleCalories = (int) (655 + (4.3 * userWeight) + (4.7 * userHeight) - (6.8 * userAge));
+            int femaleCalories = (int) ((10 * userWeight) + (6.25 * userHeight) - (5 * userAge) - 161);
+
+            // Asking the user about how active they are.
             System.out.println("1. Not active");
             System.out.println("2. Light activity (1-3 days of exercise)");
             System.out.println("3. Moderately active (moderate exercise 3-5 days)");
@@ -73,6 +79,7 @@ public class Main {
             System.out.print("Please enter the number that represents how active are you? ");
             int activity = scanner.nextInt();
 
+            // calculating user maintenance calories
             if (activity == 1) {
                 femaleCalories = (int) (femaleCalories * 1.2);
             } else if (activity == 2) {
@@ -91,7 +98,7 @@ public class Main {
         }
 
 
-        System.out.println("Thank you for using Unlimited maintenance calorie calculator!");
+        System.out.println("Thank you for using Unlimited Fitness!");
         scanner.close();
     }
 }
