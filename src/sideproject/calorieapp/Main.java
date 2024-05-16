@@ -97,6 +97,29 @@ public class Main {
             System.out.printf("Your maintenance calories is with: %d %n", femaleCalories);
         }
 
+        // asking user how intense the cut or bulk will be
+        System.out.println("Do you want to Cut or Bulk? ");
+
+
+        //String cutOrbulk = scanner.nextLine().toUpperCase();
+
+
+
+        // need to finish this block with giving the output for each choice the user might choose
+        /*if (cutOrbulk.equals("Cut")) {
+            System.out.println("How aggressive do you want the cut to be?");
+            System.out.println("1. -.5 pound a week");
+            System.out.println("2. -1 pound a week");
+            System.out.println("3. -2 pounds a week");
+        }else {
+            System.out.println("How aggressive do you want the bulk to be?");
+            System.out.println("1. .5 pound a week");
+            System.out.println("2. 1 pound a week");
+            System.out.println("3. 2 pounds a week");
+        }*/
+
+
+
 
         System.out.println("Thank you for using Unlimited Fitness!");
         scanner.close();
