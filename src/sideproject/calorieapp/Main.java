@@ -105,6 +105,7 @@ public class Main {
 
 
 
+
         // need to finish this block with giving the output for each choice the user might choose
         /*if (cutOrbulk.equals("Cut")) {
             System.out.println("How aggressive do you want the cut to be?");
