@@ -53,6 +53,47 @@ public class Main {
 
             // printing out maintenance calories
             System.out.printf("Your maintenance calories is: %d %n", maleCalories);
+            System.out.println("Please select one of the following numbers.");
+            System.out.println("1. Cut");
+            System.out.println("2. Bulk");
+            int userPlan = scanner.nextInt();
+
+            if (userPlan == 1) {
+                System.out.println("How aggressive do you want the cut to be?");
+                System.out.println("1. -.5 pound a week");
+                System.out.println("2. -1 pound a week");
+                System.out.println("3. -2 pounds a week");
+                int userSelection = scanner.nextInt();
+
+                if (userSelection == 1){
+                    maleCalories = maleCalories - 250;
+                    System.out.printf("The recommend calories for losing .5 pounds a week is %d. %n", maleCalories);
+                } else if (userSelection == 2) {
+                    maleCalories = maleCalories - 500;
+                    System.out.printf("The recommend calories for losing 1 pounds a week is %d. %n", maleCalories);
+                } else {
+                    maleCalories = maleCalories - 1000;
+                    System.out.printf("The recommend calories for losing 2 pounds a week is %d. %n", maleCalories);
+                }
+            } else {
+                System.out.println("How aggressive do you want the bulk to be?");
+                System.out.println("1. .5 pound a week");
+                System.out.println("2. 1 pound a week");
+                System.out.println("3. 2 pounds a week");
+                int userSelection = scanner.nextInt();
+
+                if (userSelection == 1) {
+                    maleCalories = maleCalories + 250;
+                    System.out.printf("The recommend calories for gaining .5 pounds a week is %d. %n", maleCalories);
+                } else if (userSelection == 2) {
+                    maleCalories = maleCalories + 500;
+                    System.out.printf("The recommend calories for gaining 1 pounds a week is %d. %n", maleCalories);
+                } else {
+                    maleCalories = maleCalories + 1000;
+                    System.out.printf("The recommend calories for gaining 2 pounds a week is %d. %n", maleCalories);
+                }
+
+            }
         }
         else {
             // asking user to enter their weight, height, and age.
@@ -95,29 +136,51 @@ public class Main {
 
             // printing out maintenance calories
             System.out.printf("Your maintenance calories is with: %d %n", femaleCalories);
+
+            // asking user how intense the cut or bulk will be
+            System.out.println("Please select one of the following numbers.");
+            System.out.println("1. Cut");
+            System.out.println("2. Bulk");
+            int userPlan = scanner.nextInt();
+
+            if (userPlan == 1) {
+                System.out.println("How aggressive do you want the cut to be?");
+                System.out.println("1. -.5 pound a week");
+                System.out.println("2. -1 pound a week");
+                System.out.println("3. -2 pounds a week");
+                int userSelection = scanner.nextInt();
+
+                if (userSelection == 1){
+                    femaleCalories = femaleCalories - 250;
+                    System.out.printf("The recommend calories for losing .5 pounds a week is %d. %n", femaleCalories);
+                } else if (userSelection == 2) {
+                    femaleCalories = femaleCalories - 500;
+                    System.out.printf("The recommend calories for losing 1 pounds a week is %d. %n", femaleCalories);
+                } else {
+                    femaleCalories = femaleCalories - 1000;
+                    System.out.printf("The recommend calories for losing 2 pounds a week is %d. %n", femaleCalories);
+                }
+            } else {
+                System.out.println("How aggressive do you want the bulk to be?");
+                System.out.println("1. .5 pound a week");
+                System.out.println("2. 1 pound a week");
+                System.out.println("3. 2 pounds a week");
+                int userSelection = scanner.nextInt();
+
+                if (userSelection == 1){
+                    femaleCalories = femaleCalories + 250;
+                    System.out.printf("The recommend calories for gaining .5 pounds a week is %d. %n", femaleCalories);
+                } else if (userSelection == 2) {
+                    femaleCalories = femaleCalories + 500;
+                    System.out.printf("The recommend calories for gaining 1 pounds a week is %d. %n", femaleCalories);
+                } else {
+                    femaleCalories = femaleCalories + 1000;
+                    System.out.printf("The recommend calories for gaining 2 pounds a week is %d. %n", femaleCalories);
+                }
+            }
+
         }
 
-        // asking user how intense the cut or bulk will be
-        System.out.println("Do you want to Cut or Bulk? ");
-
-
-        //String cutOrbulk = scanner.nextLine().toUpperCase();
-
-
-
-
-        // need to finish this block with giving the output for each choice the user might choose
-        /*if (cutOrbulk.equals("Cut")) {
-            System.out.println("How aggressive do you want the cut to be?");
-            System.out.println("1. -.5 pound a week");
-            System.out.println("2. -1 pound a week");
-            System.out.println("3. -2 pounds a week");
-        }else {
-            System.out.println("How aggressive do you want the bulk to be?");
-            System.out.println("1. .5 pound a week");
-            System.out.println("2. 1 pound a week");
-            System.out.println("3. 2 pounds a week");
-        }*/
 
 
 
