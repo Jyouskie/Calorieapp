@@ -181,10 +181,6 @@ public class Main {
 
         }
 
-
-
-
-
         System.out.println("Thank you for using Unlimited Fitness!");
         scanner.close();
     }
